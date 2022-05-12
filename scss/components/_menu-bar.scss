@@ -1,0 +1,40 @@
+@use '../abstracts/' as *;
+
+.menu-bar {
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+  padding: 8px 26px 16px 14px;
+  border-radius: 12px 12px 0px 0px;
+  -webkit-box-shadow: 0px -4px 8px $menu-bar-box-shadow-color;
+  box-shadow: 0px -4px 8px $menu-bar-box-shadow-color;
+  background-color: $menu-bar-bg-color;
+}
+
+.menu-bar__ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-bar__li--active {
+  a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  span {
+    color: $base-color;
+  }
+
+}
+
+.menu-bar__li {
+  @extend .menu-bar__li--active;
+  
+  span {
+    color: $font-color;
+  }
+  
+}

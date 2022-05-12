@@ -1,0 +1,110 @@
+@use '../abstracts/index' as *;
+
+.container-mobile-button {
+  z-index: 1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+#toggle {
+  display: none;
+}
+
+.mobile-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: $base-color;
+  cursor: pointer;
+  box-shadow: 0px 3px 15px 1px $base-color-shadow;
+}
+
+.mobile-menu {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  bottom: $mobile-menu-bottom-position;
+  box-shadow: 0px 0px 8px 2px $mobile-menu-box-shadow-color;
+  transition: all 0.2s ease-in;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 1rem;
+    height: 0.125rem;
+    background-color: #fff;
+    transform: rotate(90deg);
+    transition: all 0.4s ease;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 1rem;
+    height: 0.125rem;
+    background-color: #fff;
+    transition: all 0.4s ease;
+  }
+
+}
+
+.fab-nav {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  
+  ul {
+    position: absolute;
+    right: 1rem;
+    bottom: calc($mobile-menu-bottom-position + 3.5rem);
+    transition: all 0.4s ease-in-out;
+    transform: translateX(50%);
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
+
+  span {
+    margin-right: 1rem;
+    padding: 0.125rem 0.5rem;
+    border-radius: 50px;
+    font-size: 0.75em;
+    font-weight: 500;
+    background-color: #FFF;
+  }
+}
+
+#toggle:checked ~ .mobile-menu {
+  box-shadow: 0px 3px 15px 1px $base-color-shadow;
+}
+
+#toggle:checked ~ .fab-nav {
+  opacity: 1;
+  visibility: visible;
+  width: 100vw;
+  height: 100vh;
+  transform: translateX(0);
+}
+
+#toggle:checked ~ .fab-nav ul {
+  transform: translateX(0);
+}
+
+#toggle:checked ~ .mobile-menu:before {
+  transform: rotate(225deg);
+}
+
+#toggle:checked ~ .mobile-menu:after {
+  transform: rotate(135deg);
+}
+

@@ -1,0 +1,98 @@
+@use '../abstracts/index' as *;
+
+.consult-block {
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  max-width: 328px;
+  height: 170px;
+  border-radius: 8px;
+  background-color: $consult-block-bg;
+}
+
+.client-header {
+  position: relative;
+  padding: 1rem 1rem 0.75rem 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.client-info {
+  display: flex;
+}
+
+.client-img {
+  margin-right: 1rem;
+  width: 2rem;
+}
+
+.lh {
+  line-height: 22px;
+}
+
+.text {
+  display: flex;
+  font-size: 0.75em;
+}
+
+.ml {
+  margin-left: 8px;
+}
+
+.chat-icon-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.circle {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: $chat-bg;
+}
+
+.chat-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+hr {
+  background-color: $divisor-color;
+  opacity: 0.1;
+}
+
+.client-footer {
+  padding: 1rem;
+}
+
+.hours {
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-button {
+  background-color: $video-button-bg;
+  color: #fff;
+}
+
+.audio-button {
+  border: 1px solid $audio-button-border;
+  background-color: #fff;
+  color: $font-color;
+}
+
+.adress-button {
+  width: 100%;
+  background-color: $base-color;
+  color: #fff;
+}
