@@ -1,1 +1,2 @@
-@use './components/' as *;
+@forward './base/';
+@forward './components/';

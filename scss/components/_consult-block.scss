@@ -1,51 +1,51 @@
 @use '../abstracts/index' as *;
 
 .consult-block {
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   justify-content: space-between;
-  max-width: 328px;
-  height: 170px;
-  border-radius: 8px;
+  max-width: 20.5rem;
+  height: 100%;
+  border-radius: 0.5rem;
   background-color: $consult-block-bg;
 }
 
-.client-header {
+.consult-block__header {
   position: relative;
   padding: 1rem 1rem 0.75rem 1rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
 
-.client-info {
+.consult-block__info {
   display: flex;
 }
 
-.client-img {
+.consult-block__img {
   margin-right: 1rem;
   width: 2rem;
 }
 
-.lh {
-  line-height: 22px;
+.consult-block__lh {
+  line-height: 1.375rem;
 }
 
-.text {
+.consult-block__text {
   display: flex;
-  font-size: 0.75em;
+  font-size: 0.75rem;
 }
 
-.ml {
-  margin-left: 8px;
+.consult-block__ml {
+  margin-left: 0.5rem;
 }
 
-.chat-icon-button {
+.consult-block__chat-icon-button {
   position: absolute;
   top: 1rem;
   right: 1rem;
   cursor: pointer;
 }
 
-.circle {
+.consult-block__circle {
   position: relative;
   width: 2rem;
   height: 2rem;
@@ -53,45 +53,40 @@
   background-color: $chat-bg;
 }
 
-.chat-icon {
+.consult-block__chat-icon {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-hr {
-  background-color: $divisor-color;
-  opacity: 0.1;
-}
-
-.client-footer {
+.consult-block__footer {
   padding: 1rem;
 }
 
-.hours {
+.consult-block__hours {
   font-size: 0.75rem;
   font-weight: 500;
-  margin-bottom: 0.5rem;
 }
 
-.buttons {
+.consult-block__buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.video-button {
+.consult-block__video-button {
   background-color: $video-button-bg;
   color: #fff;
 }
 
-.audio-button {
+.consult-block__audio-button {
   border: 1px solid $audio-button-border;
   background-color: #fff;
   color: $font-color;
 }
 
-.adress-button {
+.consult-block__adress-button {
   width: 100%;
   background-color: $base-color;
   color: #fff;

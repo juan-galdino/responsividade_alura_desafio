@@ -1,17 +1,13 @@
 @use '../abstracts/index' as *;
 
-.doctor-header {
+.doctor__header {
   display: flex;
   line-height: 28px;
   margin-bottom: 30px;
 }
 
-.doctor-img {
+.doctor__img {
   margin-right: 1rem;
   width: 57px;
 }
 
-.subtitle {
-  color: $subtitle-color;
-  white-space: nowrap;
-}

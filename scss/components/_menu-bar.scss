@@ -18,6 +18,9 @@
 }
 
 .menu-bar__li--active {
+  display: flex;
+  align-items: flex-end;
+  
   a {
     display: flex;
     flex-direction: column;
