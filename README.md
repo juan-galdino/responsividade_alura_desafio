@@ -1,10 +1,6 @@
 # Desafio de Responsividade Alura
 
----
-
 ## Sobre o projeto
-
----
 
 Este projeto foi criado para cumprir um desafio proposto por **Alura** sobre responsividade para **Web Frontend**.
 
@@ -12,21 +8,15 @@ O objetivo foi criar uma interface gráfica de um aplicativo de agenda e acompan
 
 ## Layout do Projeto
 
----
-
 : adicionar imagens do layout.
 
 ## Tecnologias utilizadas
-
----
 
 - HTML
 - SCSS
 - Fontes do Google
 
 ## Autor
-
----
 
 **Juan Galdino da Costa e Silva**
 
