@@ -1,10 +1,35 @@
 # Desafio de Responsividade Alura
 
-Olá, este pequeno código é uma amostra do que consigo fazer para tornar os sites responsivos. A Alura criou o desafio #7daysOfCode de Responsividade e eu quis 
-participar para mostrar do que sou capaz.
+---
 
-Tivemos acesso à um design criado no Figma e nosso desafio era replicar o mesmo e o principal: tornar o código totalmente responsivo.
+## Sobre o projeto
 
-Mergulhei nessa empreitada e este é o repositório da minha tentativa, o qual utilizei apenas HTML e SCSS, 
-uma extensão do CSS que permite muitas sintaxes novas para arquivos CSS além da otimização, 
-organização e manutenção do código a longo prazo.
+---
+
+Este projeto foi criado para cumprir um desafio proposto por **Alura** sobre responsividade para **Web Frontend**.
+
+O objetivo foi criar uma interface gráfica de um aplicativo de agenda e acompanhamento de pacientes para **médicos**, usando apenas **HTML** e **SCSS**, englobando muitos conceitos de responsividade e boas práticas como: estruturação de HTML semântico, técnicas de modulação de código com SCSS, posicionamento de elementos com FlexBox, convenção de nomenclatura de classes com BEM, arquitetura básica de arquivos para manutenção de código e variáveis CSS3.
+
+## Layout do Projeto
+
+---
+
+: adicionar imagens do layout.
+
+## Tecnologias utilizadas
+
+---
+
+- HTML
+- SCSS
+- Fontes do Google
+
+## Autor
+
+---
+
+**Juan Galdino da Costa e Silva**
+
+Linkedin: <https://www.linkedin.com/in/juan-galdino-da-costa-e-silva/>
+
+e-mail: <jgaldino.cs@gmail.com>
