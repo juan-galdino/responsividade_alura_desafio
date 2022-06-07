@@ -30,7 +30,7 @@ h3 {
 }
 
 span {
-  font-size: 0.75em;
+  font-size: 0.75rem;
 }
 
 body {
@@ -40,31 +40,38 @@ body {
 }
 
 .container {
-  padding: 2rem 1rem 1rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem 1rem;
+  align-items: center;
 }
-
-img {
+.container img {
   border-radius: 50%;
 }
-
-article:last-child {
+.container section {
+  display: flex;
+  flex-direction: column;
+}
+.container .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.container article:last-child {
   margin-bottom: 2rem;
 }
-
-.subtitle {
+.container .subtitle {
   color: hsl(0deg, 0%, 64%);
 }
-
-i img {
+.container i img {
   border-radius: 0;
 }
-
-hr {
+.container hr {
   background-color: hsl(0deg, 0%, 27%);
   opacity: 0.1;
 }
-
-button {
+.container button {
   padding: 0.813rem 1rem;
   width: 8.688rem;
   margin-top: 0.5rem;
@@ -87,92 +94,83 @@ button {
 }
 
 .consult-block {
-  margin-top: 1rem;
+  flex-grow: 1;
   justify-content: space-between;
+  border-radius: 0.5rem;
   max-width: 20.5rem;
   height: 100%;
-  border-radius: 0.5rem;
   background-color: hsl(0deg, 0%, 100%);
 }
-
-.consult-block__header {
+@media screen and (min-width: 40.5em) {
+  .consult-block {
+    width: 20.5rem;
+    background-color: gray;
+  }
+}
+.consult-block .consult-block__header {
   position: relative;
   padding: 1rem 1rem 0.75rem 1rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
-
-.consult-block__info {
+.consult-block .consult-block__info {
   display: flex;
 }
-
-.consult-block__img {
+.consult-block .consult-block__img {
   margin-right: 1rem;
   width: 2rem;
 }
-
-.consult-block__lh {
+.consult-block .consult-block__lh {
   line-height: 1.375rem;
 }
-
-.consult-block__text {
+.consult-block .consult-block__text {
   display: flex;
   font-size: 0.75rem;
 }
-
-.consult-block__ml {
+.consult-block .consult-block__ml {
   margin-left: 0.5rem;
 }
-
-.consult-block__chat-icon-button {
+.consult-block .consult-block__chat-icon-button {
   position: absolute;
   top: 1rem;
   right: 1rem;
   cursor: pointer;
 }
-
-.consult-block__circle {
+.consult-block .consult-block__circle {
   position: relative;
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
   background-color: hsl(0deg, 0%, 96%);
 }
-
-.consult-block__chat-icon {
+.consult-block .consult-block__chat-icon {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.consult-block__footer {
+.consult-block .consult-block__footer {
   padding: 1rem;
 }
-
-.consult-block__hours {
+.consult-block .consult-block__hours {
   font-size: 0.75rem;
   font-weight: 500;
 }
-
-.consult-block__buttons {
+.consult-block .consult-block__buttons {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
-.consult-block__video-button {
+.consult-block .consult-block__video-button {
   background-color: hsl(33deg, 100%, 66%);
   color: #fff;
 }
-
-.consult-block__audio-button {
+.consult-block .consult-block__audio-button {
   border: 1px solid hsl(0deg, 0%, 93%);
   background-color: #fff;
   color: hsl(0deg, 0%, 27%);
 }
-
-.consult-block__adress-button {
+.consult-block .consult-block__adress-button {
   width: 100%;
   background-color: hsl(215deg, 100%, 64%);
   color: #fff;

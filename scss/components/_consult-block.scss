@@ -1,93 +1,101 @@
 @use '../abstracts/index' as *;
 
 .consult-block {
-  margin-top: 1rem;
+  flex-grow: 1;
   justify-content: space-between;
+  border-radius: 0.5rem;
   max-width: 20.5rem;
   height: 100%;
-  border-radius: 0.5rem;
   background-color: $consult-block-bg;
+
+
+  @media screen and (min-width: 40.5em) {
+    width: 20.5rem;
+    background-color: gray;
+  }
+
+  .consult-block__header {
+    position: relative;
+    padding: 1rem 1rem 0.75rem 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  
+  .consult-block__info {
+    display: flex;
+  }
+  
+  .consult-block__img {
+    margin-right: 1rem;
+    width: 2rem;
+  }
+  
+  .consult-block__lh {
+    line-height: 1.375rem;
+  }
+  
+  .consult-block__text {
+    display: flex;
+    font-size: 0.75rem;
+  }
+  
+  .consult-block__ml {
+    margin-left: 0.5rem;
+  }
+  
+  .consult-block__chat-icon-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+  
+  .consult-block__circle {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: $chat-bg;
+  }
+  
+  .consult-block__chat-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .consult-block__footer {
+    padding: 1rem;
+  }
+  
+  .consult-block__hours {
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .consult-block__buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .consult-block__video-button {
+    background-color: $video-button-bg;
+    color: #fff;
+  }
+  
+  .consult-block__audio-button {
+    border: 1px solid $audio-button-border;
+    background-color: #fff;
+    color: $font-color;
+  }
+  
+  .consult-block__adress-button {
+    width: 100%;
+    background-color: $base-color;
+    color: #fff;
+  }
+
 }
 
-.consult-block__header {
-  position: relative;
-  padding: 1rem 1rem 0.75rem 1rem;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-
-.consult-block__info {
-  display: flex;
-}
-
-.consult-block__img {
-  margin-right: 1rem;
-  width: 2rem;
-}
-
-.consult-block__lh {
-  line-height: 1.375rem;
-}
-
-.consult-block__text {
-  display: flex;
-  font-size: 0.75rem;
-}
-
-.consult-block__ml {
-  margin-left: 0.5rem;
-}
-
-.consult-block__chat-icon-button {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  cursor: pointer;
-}
-
-.consult-block__circle {
-  position: relative;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background-color: $chat-bg;
-}
-
-.consult-block__chat-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.consult-block__footer {
-  padding: 1rem;
-}
-
-.consult-block__hours {
-  font-size: 0.75rem;
-  font-weight: 500;
-}
-
-.consult-block__buttons {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.consult-block__video-button {
-  background-color: $video-button-bg;
-  color: #fff;
-}
-
-.consult-block__audio-button {
-  border: 1px solid $audio-button-border;
-  background-color: #fff;
-  color: $font-color;
-}
-
-.consult-block__adress-button {
-  width: 100%;
-  background-color: $base-color;
-  color: #fff;
-}
