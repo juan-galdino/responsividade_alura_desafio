@@ -104,7 +104,6 @@ body {
 @media screen and (min-width: 40.5em) {
   .consult-block {
     width: 20.5rem;
-    background-color: gray;
   }
 }
 .consult-block .consult-block__header {
