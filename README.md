@@ -8,9 +8,11 @@ O objetivo foi criar uma interface gráfica de um aplicativo de agenda e acompan
 
 ## Layout do Projeto
 
-![Imagem do Layout em celulares](/images/aluraMobile.png 'Imagem do Layout em celulares')
-![Imagem do Layout em Tablets](/images/aluraTablet.png 'Imagem do Layout em Tablets')
-![Imagem do Layout em Desktops](/images/aluraDesktop.png 'Imagem do Layout em Desktops')
+<figure>
+  <img width="500" src="images/mockupResponsividade.png" alt="Imagens do site em diferentes dispositivos"/>
+  <figcaption>Imagens do site em diferentes dispositivos</figcaption>
+</figure>
+
 
 ## Tecnologias utilizadas
 
