@@ -1,17 +1,38 @@
 @use '../abstracts/index' as *;
 
 body {
+  position: relative;
   overflow-x: hidden;
   color: $font-color;
   background-color: $bg-color;
 }
 
+.content {
+
+  @media screen and (min-width: 500px) {
+    margin-left: 20vw;
+  }
+
+  @media screen and (min-width: 1000px) {
+    margin-left: 14vw;
+  }
+
+}
+
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem 4rem 1rem;
-  // background-color: red;
-  align-items: center;
+  max-width: 360px;
+
+
+  @media screen and (min-width: 700px) {
+    left: $container-left-position-medium;
+  }
+
+  // 828 acontece um wrap, centralizar até 828
+  @media screen and (min-width: 880px){
+    max-width: 1400px;
+  }
 
   img {
     border-radius: 50%;

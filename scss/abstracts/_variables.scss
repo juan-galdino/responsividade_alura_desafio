@@ -1,1 +1,14 @@
 $mobile-menu-bottom-position: 4.625rem;
+
+// when the screen is equal to or greater than 500px
+$menu-bar-width-big: 20vw;
+$container-left-position-big: $menu-bar-width-big;
+
+
+// when the screen is equal to or greater than 700px
+$menu-bar-width-medium: 15vw;
+$container-left-position-medium: $menu-bar-width-medium;
+
+// when the screen is equal to or greater than 1000px
+$menu-bar-witdh-small: 10vw;
+$container-left-position-small: $menu-bar-witdh-small;
