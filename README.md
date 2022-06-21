@@ -9,7 +9,7 @@ O objetivo foi criar uma interface gráfica de um aplicativo de agenda e acompan
 ## Layout do Projeto
 
 <figure>
-  <img width="500" src="images/mockupResponsividade.png" alt="Imagens do site em diferentes dispositivos"/>
+  <img width="600" src="images/mockupResponsividade.png" alt="Imagens do site em diferentes dispositivos"/>
   <figcaption>Imagens do site em diferentes dispositivos</figcaption>
 </figure>
 
@@ -28,4 +28,6 @@ O objetivo foi criar uma interface gráfica de um aplicativo de agenda e acompan
 
 Linkedin: <https://www.linkedin.com/in/juan-galdino-da-costa-e-silva/>
 
-e-mail: <jgaldino.cs@gmail.com>
+E-mail: <jgaldino.cs@gmail.com>
+
+Link do deploy: <https://juan-galdino.github.io/responsividade_alura_desafio/>
