@@ -8,12 +8,16 @@ O objetivo foi criar uma interface gráfica de um aplicativo de agenda e acompan
 
 ## Layout do Projeto
 
-: adicionar imagens do layout.
+![Imagem do Layout em celulares](/images/aluraMobile.png 'Imagem do Layout em celulares')
+![Imagem do Layout em Tablets](/images/aluraTablet.png 'Imagem do Layout em Tablets')
+![Imagem do Layout em Desktops](/images/aluraDesktop.png 'Imagem do Layout em Desktops')
 
 ## Tecnologias utilizadas
 
 - HTML
 - SCSS
+- BEM
+- Figma
 - Fontes do Google
 
 ## Autor
