@@ -9,11 +9,11 @@ body {
 
 .content {
 
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 31.25em) {
     margin-left: 20vw;
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 62.5em) {
     margin-left: 14vw;
   }
 
@@ -22,16 +22,16 @@ body {
 .container {
   margin: 0 auto;
   padding: 2rem 1rem 4rem 1rem;
-  max-width: 360px;
+  max-width: 22.5rem;
 
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 43.75em) {
     left: $container-left-position-medium;
   }
 
   // 828 acontece um wrap, centralizar até 828
-  @media screen and (min-width: 880px){
-    max-width: 1400px;
+  @media screen and (min-width: 55em){
+    max-width: 87.5rem;
   }
 
   img {
