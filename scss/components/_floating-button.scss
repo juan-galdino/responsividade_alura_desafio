@@ -83,6 +83,10 @@
     font-weight: 500;
     background-color: #FFF;
   }
+
+  @media screen and (max-width:300px) {
+    padding: 0;
+  }
 }
 
 #toggle:checked ~ .mobile-menu {
