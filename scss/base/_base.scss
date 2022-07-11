@@ -8,30 +8,23 @@ body {
 }
 
 .content {
-
-  @media screen and (min-width: 31.25em) {
-    margin-left: 20vw;
+  @media (min-width: 1000px) {
+    margin-left: 13vw;
   }
-
-  @media screen and (min-width: 62.5em) {
-    margin-left: 14vw;
-  }
-
 }
 
 .container {
   margin: 0 auto;
   padding: 2rem 1rem 4rem 1rem;
-  max-width: 22.5rem;
+  max-width: 360px;
 
-
-  @media screen and (min-width: 43.75em) {
-    left: $container-left-position-medium;
+  @media (min-width: 700px) {
+    max-width: 700px;
   }
 
-  // 828 acontece um wrap, centralizar até 828
-  @media screen and (min-width: 55em){
-    max-width: 87.5rem;
+  @media (min-width: 1000px) {
+    margin-left: 0;
+    
   }
 
   img {
@@ -39,18 +32,24 @@ body {
   }
 
   section {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
   }
   
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+  .blocks {
+    display: grid;
     margin-top: 0.5rem;
+    gap: 1rem;
+    
+    @media (min-width: 700px) {
+      grid-template-columns: 1fr 1fr;  
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
-  
-  
   
   article:last-child {
     margin-bottom: 2rem;
@@ -80,8 +79,6 @@ body {
     cursor: pointer;
   }
 
-
 }
-
 
 
