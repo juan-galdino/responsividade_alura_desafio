@@ -13,73 +13,77 @@
     width: 20.5rem;
   }
 
-  .consult-block__header {
+  &__header {
     position: relative;
     padding: 1rem 1rem 0.75rem 1rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
   
-  .consult-block__info {
+  &__info {
     display: flex;
   }
   
-  .consult-block__img {
+  &__img {
     margin-right: 1rem;
-    width: 2rem;
+    @extend %imgAndChatSize;
   }
   
-  .consult-block__lh {
+  &__lh {
     line-height: 1.375rem;
   }
   
-  .consult-block__text {
+  &__text {
     display: flex;
     font-size: 0.75rem;
   }
   
-  .consult-block__ml {
+  &__ml {
     margin-left: 0.5rem;
   }
   
-  .consult-block__chat-icon-button {
+  &__chat-icon-button {
     position: absolute;
     top: 1rem;
     right: 1rem;
     cursor: pointer;
   }
+
+  &__chat-icon-button:hover {
+    @extend %button-grows;
+    transform: scale(1.2);
+  }
   
-  .consult-block__circle {
+  &__circle {
     position: relative;
-    width: 2rem;
-    height: 2rem;
+    @extend %imgAndChatSize;
     border-radius: 50%;
     background-color: $chat-bg;
   }
   
-  .consult-block__chat-icon {
+  &__chat-icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   
-  .consult-block__footer {
+  &__footer {
     padding: 1rem;
   }
   
-  .consult-block__hours {
+  &__hours {
     font-size: 0.75rem;
     font-weight: 500;
   }
   
-  .consult-block__buttons {
+  &__buttons {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
   
-  .consult-block__video-button {
+  &__video-button {
     background-color: $video-button-bg;
     color: #fff;
   }

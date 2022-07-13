@@ -4,15 +4,20 @@
 
 Este projeto foi criado para cumprir um desafio proposto por **Alura** sobre responsividade para **Web Frontend**.
 
-O objetivo foi criar uma interface gráfica de um aplicativo de agenda e acompanhamento de pacientes para **médicos**, usando apenas **HTML** e **SCSS**, englobando muitos conceitos de responsividade e boas práticas como: estruturação de HTML semântico, técnicas de modulação de código com SCSS, posicionamento de elementos com FlexBox, convenção de nomenclatura de classes com BEM, arquitetura básica de arquivos para manutenção de código e variáveis CSS3.
+O objetivo foi criar uma interface gráfica de um aplicativo de agenda e acompanhamento de consultas de pacientes para **médicos**, usando apenas **HTML** e **SCSS**, englobando muitos conceitos de responsividade e boas práticas como:
+
+- HTML semântico;
+- Arquitetura simples de partials usando SCSS;
+- Posicionamento de elementos com Grid e FlexBox;
+- Tipografia e imagens fluidas;
+- Responsividade.
 
 ## Layout do Projeto
 
 <figure>
-  <img width="600" src="images/mockupResponsividade.png" alt="Imagens do site em diferentes dispositivos"/>
+  <img width="600" src="images/all-responsive-mockups" alt="Imagens do site em diferentes dispositivos"/>
   <figcaption>Imagens do site em diferentes dispositivos</figcaption>
 </figure>
-
 
 ## Tecnologias utilizadas
 

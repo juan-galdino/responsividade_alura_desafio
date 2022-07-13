@@ -18,19 +18,29 @@ html {
 }
 
 h1 {
-  font-size: 1.375rem;
+  font-size: clamp(1.375rem, 1rem + 2vw, 2.125rem);
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: clamp(1rem, 1rem + 1vw, 1.375rem);
 }
 
 h3 {
-  font-size: 0.875rem;
+  font-size: clamp(0.875rem, 0.875rem + 0.2vw, 1rem);
 }
 
 span {
-  font-size: 0.75rem;
+  font-size: clamp(0.75em, 0.75em + 0.08vw, 0.875rem);
+}
+
+.mobile-button:hover, .mobile-menu:hover, .consult-block__chat-icon-button:hover, .container button:hover {
+  transform: scale(1.04);
+  transition: all 0.4s ease;
+}
+
+.consult-block__img, .consult-block__circle {
+  width: clamp(2rem, 1rem + 2vw, 2.5rem);
+  height: clamp(2rem, 1rem + 2vw, 2.5rem);
 }
 
 body {
@@ -40,23 +50,23 @@ body {
   background-color: hsl(255deg, 80%, 98%);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5em) {
   .content {
     margin-left: 13vw;
   }
 }
 
 .container {
-  margin: 0 auto;
+  margin-inline: auto;
   padding: 2rem 1rem 4rem 1rem;
-  max-width: 360px;
+  max-width: 22.5rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 43.75em) {
   .container {
-    max-width: 700px;
+    max-width: 43.75rem;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 62.5em) {
   .container {
     margin-left: 0;
   }
@@ -74,12 +84,12 @@ body {
   margin-top: 0.5rem;
   gap: 1rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 43.75em) {
   .container .blocks {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 75em) {
   .container .blocks {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -107,16 +117,15 @@ body {
   font-weight: 500;
   cursor: pointer;
 }
-
 .doctor__header {
   display: flex;
-  line-height: 28px;
-  margin-bottom: 30px;
+  line-height: 1.75rem;
+  margin-bottom: 1.875rem;
 }
 
 .doctor__img {
   margin-right: 1rem;
-  width: 57px;
+  width: clamp(3.5625rem, 1rem + 10vw, 4.1875rem);
 }
 
 .consult-block {
@@ -132,61 +141,61 @@ body {
     width: 20.5rem;
   }
 }
-.consult-block .consult-block__header {
+.consult-block__header {
   position: relative;
   padding: 1rem 1rem 0.75rem 1rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
-.consult-block .consult-block__info {
+.consult-block__info {
   display: flex;
 }
-.consult-block .consult-block__img {
+.consult-block__img {
   margin-right: 1rem;
-  width: 2rem;
 }
-.consult-block .consult-block__lh {
+.consult-block__lh {
   line-height: 1.375rem;
 }
-.consult-block .consult-block__text {
+.consult-block__text {
   display: flex;
   font-size: 0.75rem;
 }
-.consult-block .consult-block__ml {
+.consult-block__ml {
   margin-left: 0.5rem;
 }
-.consult-block .consult-block__chat-icon-button {
+.consult-block__chat-icon-button {
   position: absolute;
   top: 1rem;
   right: 1rem;
   cursor: pointer;
 }
-.consult-block .consult-block__circle {
+.consult-block__chat-icon-button:hover {
+  transform: scale(1.2);
+}
+.consult-block__circle {
   position: relative;
-  width: 2rem;
-  height: 2rem;
   border-radius: 50%;
   background-color: hsl(0deg, 0%, 96%);
 }
-.consult-block .consult-block__chat-icon {
+.consult-block__chat-icon {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.consult-block .consult-block__footer {
+.consult-block__footer {
   padding: 1rem;
 }
-.consult-block .consult-block__hours {
+.consult-block__hours {
   font-size: 0.75rem;
   font-weight: 500;
 }
-.consult-block .consult-block__buttons {
+.consult-block__buttons {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.consult-block .consult-block__video-button {
+.consult-block__video-button {
   background-color: hsl(33deg, 100%, 66%);
   color: #fff;
 }
@@ -221,7 +230,7 @@ body {
   border-radius: 50%;
   background-color: hsl(215deg, 100%, 64%);
   cursor: pointer;
-  box-shadow: 0px 3px 15px 1px hsla(215deg, 100%, 64%, 0.9);
+  box-shadow: 0 0.1875rem 1rem 0.0625rem hsla(215deg, 100%, 64%, 0.9);
 }
 
 .mobile-menu {
@@ -229,7 +238,7 @@ body {
   z-index: 1;
   right: 1rem;
   bottom: 4.625rem;
-  box-shadow: 0px 0px 8px 2px hsla(0deg, 0%, 0%, 0.059);
+  box-shadow: 0 0 0.5rem 0.125rem hsla(0deg, 0%, 0%, 0.059);
   transition: all 0.2s ease-in;
 }
 .mobile-menu:before {
@@ -255,7 +264,7 @@ body {
   visibility: hidden;
   transition: all 0.4s ease-in-out;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: hsla(0deg, 0%, 0%, 0.6);
 }
 .fab-nav ul {
   position: absolute;
@@ -272,21 +281,15 @@ body {
 }
 .fab-nav span {
   margin-right: 1rem;
-  padding: 0.125rem 0.5rem;
-  border-radius: 50px;
+  padding: 0.125rem;
+  border-radius: 3.125rem;
   text-align: center;
-  font-size: 0.75em;
   font-weight: 500;
   background-color: #FFF;
 }
-@media screen and (max-width: 300px) {
-  .fab-nav {
-    padding: 0;
-  }
-}
 
 #toggle:checked ~ .mobile-menu {
-  box-shadow: 0px 3px 15px 1px hsla(215deg, 100%, 64%, 0.9);
+  box-shadow: 0 0.1875rem 1rem 0.0625rem hsla(215deg, 100%, 64%, 0.9);
 }
 
 #toggle:checked ~ .fab-nav {
@@ -315,12 +318,12 @@ body {
   z-index: 1;
   width: 100%;
   padding: 0.5rem 1.625rem 1rem 0.875rem;
-  border-radius: 0.75rem 0.75rem 0px 0px;
-  -webkit-box-shadow: 0px -0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.059);
-  box-shadow: 0px -0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.059);
+  border-radius: 0.75rem 0.75rem 0 0;
+  -webkit-box-shadow: 0 -0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.059);
+  box-shadow: 0 -0.25rem 0.5rem hsla(0deg, 0%, 0%, 0.059);
   background-color: hsl(0deg, 0%, 100%);
 }
-@media (min-width: 1000px) {
+@media (min-width: 62.5em) {
   .menu-bar {
     padding-top: 2rem;
     width: 13vw;
@@ -350,14 +353,14 @@ body {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 1000px) {
+@media (min-width: 62.5em) {
   .menu-bar .menu-bar__li--active a, .menu-bar .menu-bar__li a {
     flex-direction: row;
     gap: 1rem;
   }
 }
 .menu-bar .menu-bar__li--active i, .menu-bar .menu-bar__li i {
-  width: 20px;
+  width: 1.25rem;
 }
 .menu-bar .menu-bar__li--active span, .menu-bar .menu-bar__li span {
   position: relative;
@@ -368,12 +371,12 @@ body {
   position: absolute;
   content: "";
   width: 0;
-  height: 4px;
+  height: 0.25rem;
   background-color: hsl(215deg, 100%, 64%);
   left: 50%;
-  bottom: -8px;
-  transition: 0.4s ease-in-out;
-  border-radius: 20px;
+  bottom: -0.5rem;
+  transition: all 0.4s ease;
+  border-radius: 1.25rem;
 }
 .menu-bar .menu-bar__li--active:hover span::after, .menu-bar .menu-bar__li:hover span::after {
   width: 100%;

@@ -2,12 +2,13 @@
 
 .doctor__header {
   display: flex;
-  line-height: 28px;
-  margin-bottom: 30px;
+  line-height: 1.75rem;
+  margin-bottom: 1.875rem;
 }
 
 .doctor__img {
   margin-right: 1rem;
-  width: 57px;
+  // width: 3.5625rem;
+  width: clamp(3.5625rem, 1rem + 10vw, 4.1875rem);
 }
 

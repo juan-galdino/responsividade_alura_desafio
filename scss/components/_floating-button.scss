@@ -20,7 +20,11 @@
   border-radius: 50%;
   background-color: $base-color;
   cursor: pointer;
-  box-shadow: 0px 3px 15px 1px $base-color-shadow;
+  box-shadow: 0 0.1875rem 1rem 0.0625rem $base-color-shadow;
+}
+
+.mobile-button:hover {
+  @extend %button-grows;
 }
 
 .mobile-menu {
@@ -28,7 +32,7 @@
   z-index: 1;
   right: 1rem;
   bottom: $mobile-menu-bottom-position;
-  box-shadow: 0px 0px 8px 2px $mobile-menu-box-shadow-color;
+  box-shadow: 0 0 0.5rem 0.125rem $mobile-menu-box-shadow-color;
   transition: all 0.2s ease-in;
 
   &:before {
@@ -52,12 +56,16 @@
 
 }
 
+.mobile-menu:hover {
+  @extend %button-grows;
+}
+
 .fab-nav {
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease-in-out;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: hsla(0, 0%, 0%, 0.6);
   
   ul {
     position: absolute;
@@ -76,21 +84,20 @@
 
   span {
     margin-right: 1rem;
-    padding: 0.125rem 0.5rem;
-    border-radius: 50px;
+    padding: 0.125rem;
+    border-radius: 3.125rem;
     text-align: center;
-    font-size: 0.75em;
+    // font-size: 0.75rem;
     font-weight: 500;
     background-color: #FFF;
+  
   }
 
-  @media screen and (max-width:300px) {
-    padding: 0;
-  }
+  
 }
 
 #toggle:checked ~ .mobile-menu {
-  box-shadow: 0px 3px 15px 1px $base-color-shadow;
+  box-shadow: 0 0.1875rem 1rem 0.0625rem $base-color-shadow;
 }
 
 #toggle:checked ~ .fab-nav {
