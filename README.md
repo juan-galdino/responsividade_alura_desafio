@@ -15,7 +15,7 @@ O objetivo foi criar uma interface gráfica de um aplicativo de agenda e acompan
 ## Layout do Projeto
 
 <figure>
-  <img width="600" src="images/all-responsive-mockups" alt="Imagens do site em diferentes dispositivos"/>
+  <img width="600" src="images/all-responsive-mockups.png" alt="Imagens do site em diferentes dispositivos"/>
   <figcaption>Imagens do site em diferentes dispositivos</figcaption>
 </figure>
 
